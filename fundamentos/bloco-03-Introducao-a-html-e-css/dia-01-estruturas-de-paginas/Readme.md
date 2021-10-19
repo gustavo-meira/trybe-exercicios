@@ -1,0 +1,1 @@
+Nos primeiros 3 dias de aula aprendemos sobre como funcionam as estruturas de uma página HTML, CSS, seletores CSS e o modelo conhecido como box model e fomos desafiados a criar nosso próprio portifolio com os conteudos que aprendemos na aula, você pode encontrar meu portifólio nesse [link](https://gustavo-meira.github.io/).
