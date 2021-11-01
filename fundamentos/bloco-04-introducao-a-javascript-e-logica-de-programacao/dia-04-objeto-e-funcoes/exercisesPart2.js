@@ -11,3 +11,17 @@ function checkPalindrome(word) {
 console.log(checkPalindrome('arara'));
 
 console.log(checkPalindrome('desenvolvimento'));
+
+function indexHigherNumber(array) {
+  let index;
+  let highestNumber = array[0];
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] > highestNumber) {
+      index = i;
+      highestNumber = array[i];
+    }
+  }
+  return index;
+}
+
+console.log(indexHigherNumber([2, 3, 6, 7, 10, 1]));
