@@ -89,3 +89,9 @@ function sumOfNumbers(number) {
 }
 
 console.log(sumOfNumbers(2));
+
+function stringEndsWith(stringWord, stringEnd) {
+  return stringWord.endsWith(stringEnd);
+}
+
+console.log(stringEndsWith('trybe', 'be'));
