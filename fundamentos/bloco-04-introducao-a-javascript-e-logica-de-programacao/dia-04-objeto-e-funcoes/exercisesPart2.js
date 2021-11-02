@@ -53,3 +53,29 @@ function biggestName(array) {
 }
 
 console.log(biggestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+function numberMostRepeated(array) {
+  array.sort((a, b) => a - b);
+  const countedNumbers = {};
+  
+  for (let i = 0; i < array.length; i += 1) {
+    const currNumber = array[i];
+    if (countedNumbers[currNumber]) {
+      countedNumbers[currNumber] += 1;
+    } else {
+      countedNumbers[currNumber] = 1;
+    }
+  }
+  
+  let number = 0;
+  let highestNumber;
+  for (let numbers in countedNumbers) {
+    if (countedNumbers[numbers] > number) {
+      number = countedNumbers[numbers];
+      highestNumber = numbers;
+    }
+  }
+  return highestNumber;
+}
+
+console.log(numberMostRepeated([2, 3, 2, 5, 8, 2, 3]));
