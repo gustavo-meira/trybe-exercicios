@@ -94,6 +94,16 @@
       changingH1TextToUpper();
 
       // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+
+      function logAllParagraphs() {
+        const paragraphs = document.getElementsByTagName('p');
+        for (let i = 0; i < paragraphs.length; i += 1) {
+          console.log(paragraphs[i].innerText);
+        }
+      }
+
+      logAllParagraphs();
+
     </script>
   </body>
 </html>
