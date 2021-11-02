@@ -79,3 +79,13 @@ function numberMostRepeated(array) {
 }
 
 console.log(numberMostRepeated([2, 3, 2, 5, 8, 2, 3]));
+
+function sumOfNumbers(number) {
+  let summedNumber = 0;
+  for (let i = 0; i <= number; i += 1) {
+    summedNumber += i;
+  }
+  return summedNumber;
+}
+
+console.log(sumOfNumbers(2));
