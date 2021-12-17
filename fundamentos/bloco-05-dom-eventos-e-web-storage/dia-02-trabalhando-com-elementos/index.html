@@ -120,6 +120,11 @@
       mainContent.appendChild(createHeading3('Terceiro h3'));
 
       heading.classList.add('title');
+
+      const allHeading3 = document.querySelectorAll('h3');
+      allHeading3.forEach((heading3) => {
+        heading3.classList.add('description');
+      });
     </script>
   </body>
 </html>
