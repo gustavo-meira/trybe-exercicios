@@ -87,6 +87,27 @@
       image.classList.add('small-image');
       image.src = 'https://picsum.photos/200';
       sectionLeft.appendChild(image);
+
+      function createLi(textContent) {
+        const li = document.createElement('li');
+        li.innerText = textContent;
+        return li;
+      }
+      
+      const unorderedList = document.createElement('ul');
+
+      unorderedList.appendChild(createLi('Um'));
+      unorderedList.appendChild(createLi('Dois'));
+      unorderedList.appendChild(createLi('Três'));
+      unorderedList.appendChild(createLi('Quatro'));
+      unorderedList.appendChild(createLi('Cinco'));
+      unorderedList.appendChild(createLi('Seis'));
+      unorderedList.appendChild(createLi('Sete'));
+      unorderedList.appendChild(createLi('Oito'));
+      unorderedList.appendChild(createLi('Nove'));
+      unorderedList.appendChild(createLi('Dez'));
+
+      sectionRight.appendChild(unorderedList);
     </script>
   </body>
 </html>
