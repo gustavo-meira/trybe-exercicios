@@ -108,6 +108,16 @@
       unorderedList.appendChild(createLi('Dez'));
 
       sectionRight.appendChild(unorderedList);
+
+      function createHeading3(textContent) {
+        const heading3 = document.createElement('h3');
+        heading3.innerText = textContent;
+        return heading3;
+      }
+
+      mainContent.appendChild(createHeading3('Primeiro h3'));
+      mainContent.appendChild(createHeading3('Segundo h3'));
+      mainContent.appendChild(createHeading3('Terceiro h3'));
     </script>
   </body>
 </html>
